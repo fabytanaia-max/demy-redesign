@@ -56,17 +56,7 @@
   <header class="topbar">
     <div class="topbar__inner">
       <a href="#top" class="brand">
-        <svg class="brand__logo" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
-          <defs>
-            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#00e0ff"/>
-              <stop offset="100%" stop-color="#0080ff"/>
-            </linearGradient>
-          </defs>
-          <path d="M5 12 L20 5 L35 12 L35 28 L20 35 L5 28 Z" stroke="url(#brandGradient)" stroke-width="1.5" fill="none"/>
-          <path d="M14 16 L14 24 M14 20 L20 20 M20 16 L20 24 M20 16 L26 16 L26 24 L20 24" stroke="url(#brandGradient)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand__name">DEMY <em>Schandeler</em></span>
+        <img class="brand__logo" src="assets/logo-demy.svg" alt="Demy Schandeler" width="140" height="36" />
       </a>
 
       <nav class="nav" aria-label="Main navigation">
@@ -95,6 +85,9 @@
          HERO
          ============================================================= -->
     <section class="hero">
+      <div class="hero__bg-image" aria-hidden="true">
+        <img src="assets/hero/hero-1.webp" alt="" loading="eager" decoding="async" />
+      </div>
       <div class="container">
         <p class="kicker reveal">
           <span class="kicker__line"></span>
@@ -202,6 +195,11 @@
             <span class="timeline__year">2008</span>
             <h3>Third generation</h3>
             <p>Joël, Gast and Laurent Schandeler take over management. 170 employees, 120 vehicles, head office in Keispelt and a branch in Eischen.</p>
+            <div class="timeline__portraits" aria-hidden="true">
+              <img src="assets/family/joel-schandeler.webp" alt="Joël Schandeler" title="Joël Schandeler" loading="lazy" />
+              <img src="assets/family/gast-schandeler.webp" alt="Gast Schandeler" title="Gast Schandeler" loading="lazy" />
+              <img src="assets/family/laurent-schandeler.webp" alt="Laurent Schandeler" title="Laurent Schandeler" loading="lazy" />
+            </div>
           </div>
           <div class="timeline__item reveal" data-delay="320">
             <span class="timeline__year">2019</span>
@@ -233,77 +231,69 @@
         </header>
 
         <div class="services-grid">
-          <article class="service-card reveal" data-card-bg="0">
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="3" y="6" width="18" height="13" rx="2"/>
-                <line x1="3" y1="12" x2="21" y2="12"/>
-                <circle cx="7" cy="17" r="1.5"/>
-                <circle cx="17" cy="17" r="1.5"/>
-              </svg>
+          <article class="service-card service-card--with-image reveal">
+            <div class="service-card__image">
+              <img src="assets/transport/bus.webp" alt="Bus hire" loading="lazy" />
             </div>
-            <h3>Bus hire</h3>
-            <p>Modern coaches for groups of 30 to 70 passengers, with professional drivers and amenities for long-distance comfort.</p>
+            <div class="service-card__body">
+              <h3>Bus hire</h3>
+              <p>Modern coaches for groups of 30 to 70 passengers, with professional drivers and amenities for long-distance comfort.</p>
+            </div>
             <span class="service-card__num">01</span>
           </article>
 
-          <article class="service-card reveal" data-card-bg="1" data-delay="80">
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="4" y="8" width="14" height="10" rx="1.5"/>
-                <line x1="4" y1="13" x2="18" y2="13"/>
-                <circle cx="7" cy="17" r="1.2"/>
-                <circle cx="15" cy="17" r="1.2"/>
-              </svg>
+          <article class="service-card service-card--with-image reveal" data-delay="80">
+            <div class="service-card__image">
+              <img src="assets/transport/minibus.webp" alt="Minibus without driver" loading="lazy" />
             </div>
-            <h3>Minibus without driver</h3>
-            <p>Self-drive minibus rentals for clubs, schools, and private events. Up to 9 seats, automatic transmission available.</p>
+            <div class="service-card__body">
+              <h3>Minibus without driver</h3>
+              <p>Self-drive minibus rentals for clubs, schools, and private events. Up to 9 seats, automatic transmission available.</p>
+            </div>
             <span class="service-card__num">02</span>
           </article>
 
-          <article class="service-card reveal" data-card-bg="2" data-delay="160">
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <circle cx="12" cy="12" r="9"/>
-                <polyline points="12 7 12 12 16 14"/>
-              </svg>
+          <article class="service-card service-card--with-image reveal" data-delay="160">
+            <div class="service-card__image">
+              <img src="assets/transport/dem-shuttle.webp" alt="Dem Shuttle" loading="lazy" />
             </div>
-            <h3>Dem Shuttle</h3>
-            <p>On-demand shuttle service for stress-free evenings out. Flat rates, professional drivers, peace of mind included.</p>
+            <div class="service-card__body">
+              <h3>Dem Shuttle</h3>
+              <p>On-demand shuttle service for stress-free evenings out. Flat rates, professional drivers, peace of mind included.</p>
+            </div>
             <span class="service-card__num">03</span>
           </article>
 
-          <article class="service-card reveal" data-card-bg="3" data-delay="240">
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
+          <article class="service-card service-card--with-image reveal" data-delay="240">
+            <div class="service-card__image">
+              <img src="assets/transport/airport-shuttle.webp" alt="Airport Shuttle" loading="lazy" />
             </div>
-            <h3>Airport Shuttle</h3>
-            <p>Reliable transfers to and from Findel and surrounding airports. Track flights in real-time, never miss a connection.</p>
+            <div class="service-card__body">
+              <h3>Airport Shuttle</h3>
+              <p>Reliable transfers to and from Findel and surrounding airports. Track flights in real-time, never miss a connection.</p>
+            </div>
             <span class="service-card__num">04</span>
           </article>
 
-          <article class="service-card service-card--featured reveal" data-card-bg="4" data-delay="320">
-            <div class="service-card__icon service-card__icon--accent">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
+          <article class="service-card service-card--with-image service-card--featured reveal" data-delay="320">
+            <div class="service-card__image">
+              <img src="assets/transport/party-bus.webp" alt="Party Bus FIRE & EYES" loading="lazy" />
             </div>
-            <h3>Party Bus FIRE & EYES</h3>
-            <p>Premium party experience on wheels. LED ambiance, premium sound system, bar — your event starts the moment you board.</p>
+            <div class="service-card__body">
+              <h3>Party Bus FIRE &amp; EYES</h3>
+              <p>Premium party experience on wheels. LED ambiance, premium sound system, bar — your event starts the moment you board.</p>
+            </div>
             <span class="service-card__featured-badge">Signature</span>
           </article>
 
-          <article class="service-card reveal" data-card-bg="5" data-delay="400">
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
+          <article class="service-card service-card--with-image reveal" data-delay="400">
+            <div class="service-card__image">
+              <img src="assets/transport/public-transport.webp" alt="Public transport" loading="lazy" />
             </div>
-            <h3>Public transport</h3>
-            <p>Major contributor to RGTR, AVL and ADAPTO networks for the State and City of Luxembourg. School transport across multiple municipalities.</p>
+            <div class="service-card__body">
+              <h3>Public transport</h3>
+              <p>Major contributor to RGTR, AVL and ADAPTO networks for the State and City of Luxembourg. School transport across multiple municipalities.</p>
+            </div>
             <span class="service-card__num">06</span>
           </article>
         </div>
@@ -403,60 +393,68 @@
         </header>
 
         <div class="travel-grid">
-          <a href="https://www.demy.lu/en/voyages/bus-trips" target="_blank" rel="noreferrer" class="travel-card reveal">
-            <span class="travel-card__emoji">🚌</span>
-            <h3>Bus trips</h3>
-            <p>State-of-the-art touring buses across Europe's most beautiful regions.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/bus-trips" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal">
+            <div class="travel-card__image"><img src="assets/travel/bus-trips.webp" alt="Bus trips" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Bus trips</h3>
+              <p>State-of-the-art touring buses across Europe.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/active-travels" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="40">
-            <span class="travel-card__emoji">🏃</span>
-            <h3>Active travels</h3>
-            <p>Combine sport and travel in one perfect itinerary.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/active-travels" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="40">
+            <div class="travel-card__image"><img src="assets/travel/active-travels.webp" alt="Active travels" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Active travels</h3>
+              <p>Combine sport and travel in one itinerary.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/cruises" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="80">
-            <span class="travel-card__emoji">🛳</span>
-            <h3>Cruises</h3>
-            <p>Ocean and river cruises with selected partners.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/cruises" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="80">
+            <div class="travel-card__image"><img src="assets/travel/cruises.webp" alt="Cruises" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Cruises</h3>
+              <p>Ocean and river cruises with selected partners.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/group-trips" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="120">
-            <span class="travel-card__emoji">👥</span>
-            <h3>Group trips</h3>
-            <p>Custom itineraries for clubs, companies and groups of friends.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/group-trips" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="120">
+            <div class="travel-card__image"><img src="assets/travel/group-trips.webp" alt="Group trips" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Group trips</h3>
+              <p>Custom itineraries for clubs and companies.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/fly-away-city-trips" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="160">
-            <span class="travel-card__emoji">✈️</span>
-            <h3>Fly Away city trips</h3>
-            <p>European city escapes at unbeatable prices.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/fly-away-city-trips" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="160">
+            <div class="travel-card__image"><img src="assets/travel/fly-away.webp" alt="Fly Away city trips" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Fly Away city trips</h3>
+              <p>European city escapes at unbeatable prices.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/classics-tour" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="200">
-            <span class="travel-card__emoji">🎭</span>
-            <h3>Classics tour</h3>
-            <p>Experience the classics up close.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/classics-tour" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="200">
+            <div class="travel-card__image"><img src="assets/travel/classics-tour.webp" alt="Classics tour" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Classics tour</h3>
+              <p>Experience the classics up close.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/day-trips" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="240">
-            <span class="travel-card__emoji">☀️</span>
-            <h3>Day trips</h3>
-            <p>Single-day getaways by coach in the region.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/honeymoon" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="240">
+            <div class="travel-card__image"><img src="assets/travel/honeymoon.webp" alt="Honeymoon" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Honeymoon</h3>
+              <p>Tailor-made romantic getaways.</p>
+            </div>
           </a>
-          <a href="https://www.demy.lu/en/voyages/honeymoon" target="_blank" rel="noreferrer" class="travel-card reveal" data-delay="280">
-            <span class="travel-card__emoji">💍</span>
-            <h3>Honeymoon</h3>
-            <p>Tailor-made romantic getaways to celebrate your love.</p>
-            <span class="travel-card__arrow">→</span>
+          <a href="https://www.demy.lu/en/voyages/planet-b-trips" target="_blank" rel="noreferrer" class="travel-card travel-card--with-image reveal" data-delay="280">
+            <div class="travel-card__image"><img src="assets/travel/planet-b.webp" alt="Planet B trips" loading="lazy"/></div>
+            <div class="travel-card__body">
+              <h3>Planet B trips</h3>
+              <p>Low-impact journeys for conscious travelers.</p>
+            </div>
           </a>
         </div>
 
         <p class="travel-extra reveal">
           + 4 more categories on the original site:
           <a href="https://www.demy.lu/en/voyages/flights" target="_blank" rel="noreferrer">Flights</a> ·
-          <a href="https://www.demy.lu/en/voyages/planet-b-trips" target="_blank" rel="noreferrer">Planet B trips</a> ·
+          <a href="https://www.demy.lu/en/voyages/day-trips" target="_blank" rel="noreferrer">Day trips</a> ·
           <a href="https://www.demy.lu/en/voyages/discover-travel" target="_blank" rel="noreferrer">Discover Travel (outside Europe)</a> ·
           <a href="https://www.demy.lu/en/voyages/cultural-trips" target="_blank" rel="noreferrer">Cultural trips</a>
         </p>
@@ -499,9 +497,15 @@
                 <span class="csr-stat__label">SDK label<br />(SuperDrecksKëscht)</span>
               </div>
             </div>
-            <p class="csr-labels">
-              ESR · Made in Luxembourg · Stroum Bus · SDK · Diversity Charter · Class A+ buildings
-            </p>
+            <p class="csr-labels-title">Certifications &amp; labels</p>
+            <div class="csr-logos">
+              <img src="assets/csr/label-rse.png" alt="ESR Label" loading="lazy" />
+              <img src="assets/csr/label-stroum-bus.png" alt="Stroum Bus" loading="lazy" />
+              <img src="assets/csr/superdrecksk.png" alt="SuperDrecksKëscht" loading="lazy" />
+              <img src="assets/csr/made-in-lux.png" alt="Made in Luxembourg" loading="lazy" />
+              <img src="assets/csr/charte-diversite.png" alt="Diversity Charter Luxembourg" loading="lazy" />
+              <img src="assets/csr/label-re.png" alt="Label RE" loading="lazy" />
+            </div>
           </div>
           <div class="csr-visual reveal" data-delay="120" aria-hidden="true">
             <div class="csr-orbit">
@@ -627,13 +631,9 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <div class="brand">
-          <svg class="brand__logo" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
-            <path d="M5 12 L20 5 L35 12 L35 28 L20 35 L5 28 Z" stroke="url(#brandGradient)" stroke-width="1.5" fill="none"/>
-            <path d="M14 16 L14 24 M14 20 L20 20 M20 16 L20 24 M20 16 L26 16 L26 24 L20 24" stroke="url(#brandGradient)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span class="brand__name">DEMY <em>Schandeler</em></span>
+          <img class="brand__logo brand__logo--footer" src="assets/logo-demy.svg" alt="Demy Schandeler" width="160" height="42" />
         </div>
-        <p>Transport and travel agency in Luxembourg since 1949.</p>
+        <p>Family-run transport and travel agency in Luxembourg since 1949. 525 vehicles, 700+ employees, 5 agencies.</p>
       </div>
 
       <div class="footer__col">
