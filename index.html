@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Demy Schandeler · Moving Luxembourg since 1949</title>
+  <meta name="description" content="Transport and travel agency in Luxembourg since 1949. Bus, minibus, shuttles, organized trips, cruises and more. Five agencies across the country." />
+  <meta name="theme-color" content="#050b1a" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Demy Schandeler · Moving Luxembourg since 1949" />
+  <meta property="og:description" content="76 years of transport and travel expertise across Luxembourg." />
+  <meta property="og:locale" content="en_LU" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=1" />
+</head>
+<body>
+  <!-- =============================================================
+       PROPOSAL PREVIEW BANNER
+       ============================================================= -->
+  <div class="preview-banner" role="banner">
+    <div class="preview-banner__inner">
+      <span class="preview-banner__dot"></span>
+      <span class="preview-banner__text">
+        <strong>Proposal preview</strong> · This is a redesign concept submitted by
+        <a href="https://fabytanaia-max.github.io/fabricio-tanaia-site/" target="_blank" rel="noreferrer">Fabrício Tanaia</a>
+        — not the official Demy Schandeler website
+      </span>
+      <a href="https://www.demy.lu/en/" target="_blank" rel="noreferrer" class="preview-banner__link">Visit current site →</a>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient lights -->
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- =============================================================
+       TOP NAVIGATION
+       ============================================================= -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#top" class="brand">
+        <svg class="brand__logo" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+          <defs>
+            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00e0ff"/>
+              <stop offset="100%" stop-color="#0080ff"/>
+            </linearGradient>
+          </defs>
+          <path d="M5 12 L20 5 L35 12 L35 28 L20 35 L5 28 Z" stroke="url(#brandGradient)" stroke-width="1.5" fill="none"/>
+          <path d="M14 16 L14 24 M14 20 L20 20 M20 16 L20 24 M20 16 L26 16 L26 24 L20 24" stroke="url(#brandGradient)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand__name">DEMY <em>Schandeler</em></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#transport">Transport</a>
+        <a href="#travel">Travel</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#agencies">Agencies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <button class="lang-switch" aria-label="Language">
+          <span>EN</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm">
+          Get a quote
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- =============================================================
+         HERO
+         ============================================================= -->
+    <section class="hero">
+      <div class="container">
+        <p class="kicker reveal">
+          <span class="kicker__line"></span>
+          Luxembourg · Est. 1949
+        </p>
+
+        <h1 class="hero__title reveal" data-delay="100">
+          Moving<br />
+          <span class="hero__title-accent">Luxembourg</span><br />
+          since 1949.
+        </h1>
+
+        <p class="hero__lead reveal" data-delay="200">
+          Three generations of transport and travel expertise, now powered by a digital experience worthy of the journey ahead.
+        </p>
+
+        <div class="hero__actions reveal" data-delay="300">
+          <a href="#transport" class="btn btn--primary btn--lg">
+            Need transportation
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#travel" class="btn btn--ghost btn--lg">
+            Looking to travel
+          </a>
+        </div>
+
+        <!-- Floating service cards -->
+        <div class="hero__cards" aria-hidden="true">
+          <div class="float-card float-card--1">
+            <span class="float-card__icon">🚌</span>
+            <span class="float-card__label">Bus rental</span>
+          </div>
+          <div class="float-card float-card--2">
+            <span class="float-card__icon">✈️</span>
+            <span class="float-card__label">City trips</span>
+          </div>
+          <div class="float-card float-card--3">
+            <span class="float-card__icon">🚐</span>
+            <span class="float-card__label">Dem Shuttle</span>
+          </div>
+          <div class="float-card float-card--4">
+            <span class="float-card__icon">🛳</span>
+            <span class="float-card__label">Cruises</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar reveal" data-delay="400">
+        <div class="container stats-bar__inner">
+          <div class="stat">
+            <span class="stat__value" data-counter="76">76</span>
+            <span class="stat__label">years of expertise</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-counter="5">5</span>
+            <span class="stat__label">agencies in Luxembourg</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-counter="50">50</span>
+            <span class="stat__label">+ vehicles in fleet</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">24/7</span>
+            <span class="stat__label">customer support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         TRANSPORT SERVICES
+         ============================================================= -->
+    <section class="section" id="transport">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker"><span class="kicker__line"></span> Transport solutions</p>
+          <h2 class="section-title">
+            From single shuttles to <em>full-fleet logistics.</em>
+          </h2>
+          <p class="section-lead">
+            Whether you need to move 4 people or 400, our fleet adapts to every scale and occasion.
+          </p>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card reveal" data-card-bg="0">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="6" width="18" height="13" rx="2"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <circle cx="7" cy="17" r="1.5"/>
+                <circle cx="17" cy="17" r="1.5"/>
+              </svg>
+            </div>
+            <h3>Bus hire</h3>
+            <p>Modern coaches for groups of 30 to 70 passengers, with professional drivers and amenities for long-distance comfort.</p>
+            <span class="service-card__num">01</span>
+          </article>
+
+          <article class="service-card reveal" data-card-bg="1" data-delay="80">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="4" y="8" width="14" height="10" rx="1.5"/>
+                <line x1="4" y1="13" x2="18" y2="13"/>
+                <circle cx="7" cy="17" r="1.2"/>
+                <circle cx="15" cy="17" r="1.2"/>
+              </svg>
+            </div>
+            <h3>Minibus without driver</h3>
+            <p>Self-drive minibus rentals for clubs, schools, and private events. Up to 9 seats, automatic transmission available.</p>
+            <span class="service-card__num">02</span>
+          </article>
+
+          <article class="service-card reveal" data-card-bg="2" data-delay="160">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 7 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Dem Shuttle</h3>
+            <p>On-demand shuttle service for stress-free evenings out. Flat rates, professional drivers, peace of mind included.</p>
+            <span class="service-card__num">03</span>
+          </article>
+
+          <article class="service-card reveal" data-card-bg="3" data-delay="240">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3>Airport Shuttle</h3>
+            <p>Reliable transfers to and from Findel and surrounding airports. Track flights in real-time, never miss a connection.</p>
+            <span class="service-card__num">04</span>
+          </article>
+
+          <article class="service-card service-card--featured reveal" data-card-bg="4" data-delay="320">
+            <div class="service-card__icon service-card__icon--accent">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3>Party Bus FIRE & EYES</h3>
+            <p>Premium party experience on wheels. LED ambiance, premium sound system, bar — your event starts the moment you board.</p>
+            <span class="service-card__featured-badge">Signature</span>
+          </article>
+
+          <article class="service-card reveal" data-card-bg="5" data-delay="400">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Public transport</h3>
+            <p>Operating regular public transport lines and school routes across multiple Luxembourgish municipalities since decades.</p>
+            <span class="service-card__num">06</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         FLEET SHOWCASE
+         ============================================================= -->
+    <section class="section section--alt" id="fleet">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker"><span class="kicker__line"></span> The fleet</p>
+          <h2 class="section-title">
+            Modern, top-tier, <em>latest-generation.</em>
+          </h2>
+          <p class="section-lead">
+            Every vehicle in our fleet is recent, equipped with comfort and safety technology, and rigorously maintained.
+          </p>
+        </header>
+
+        <div class="fleet-grid">
+          <article class="fleet-card reveal">
+            <div class="fleet-card__top">
+              <span class="fleet-card__cat">Coaches</span>
+              <span class="fleet-card__count">12+</span>
+            </div>
+            <h3>Touring Coaches</h3>
+            <ul class="fleet-card__features">
+              <li><span>•</span>50–70 seats</li>
+              <li><span>•</span>USB charging at every seat</li>
+              <li><span>•</span>WiFi onboard</li>
+              <li><span>•</span>Reclining seats, ample legroom</li>
+            </ul>
+          </article>
+
+          <article class="fleet-card reveal" data-delay="80">
+            <div class="fleet-card__top">
+              <span class="fleet-card__cat">Minibuses</span>
+              <span class="fleet-card__count">15+</span>
+            </div>
+            <h3>Premium Minibuses</h3>
+            <ul class="fleet-card__features">
+              <li><span>•</span>9–25 seats</li>
+              <li><span>•</span>Automatic transmission</li>
+              <li><span>•</span>Climate control</li>
+              <li><span>•</span>Self-drive available</li>
+            </ul>
+          </article>
+
+          <article class="fleet-card fleet-card--accent reveal" data-delay="160">
+            <div class="fleet-card__top">
+              <span class="fleet-card__cat">Signature</span>
+              <span class="fleet-card__count">FIRE & EYES</span>
+            </div>
+            <h3>Party Bus</h3>
+            <ul class="fleet-card__features">
+              <li><span>•</span>LED ambient lighting</li>
+              <li><span>•</span>Premium sound system</li>
+              <li><span>•</span>Onboard bar</li>
+              <li><span>•</span>Up to 40 guests</li>
+            </ul>
+          </article>
+
+          <article class="fleet-card reveal" data-delay="240">
+            <div class="fleet-card__top">
+              <span class="fleet-card__cat">Shuttles</span>
+              <span class="fleet-card__count">8+</span>
+            </div>
+            <h3>Shuttles & Transfers</h3>
+            <ul class="fleet-card__features">
+              <li><span>•</span>Comfortable seating</li>
+              <li><span>•</span>Real-time tracking</li>
+              <li><span>•</span>Airport, hotel, event</li>
+              <li><span>•</span>24/7 availability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         TRAVEL CATEGORIES
+         ============================================================= -->
+    <section class="section" id="travel">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker"><span class="kicker__line"></span> Travel agency</p>
+          <h2 class="section-title">
+            Twelve ways to <em>see the world.</em>
+          </h2>
+          <p class="section-lead">
+            From cultural escapes to bucket-list cruises, our travel team curates experiences with the same care we put behind the wheel.
+          </p>
+        </header>
+
+        <div class="travel-grid">
+          <a href="#" class="travel-card reveal">
+            <span class="travel-card__emoji">🚌</span>
+            <h3>Bus trips</h3>
+            <p>Curated multi-day European routes by coach.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="40">
+            <span class="travel-card__emoji">🏃</span>
+            <h3>Active travels</h3>
+            <p>Trips for those who travel with energy.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="80">
+            <span class="travel-card__emoji">🛳</span>
+            <h3>Cruises</h3>
+            <p>River and ocean voyages, expertly guided.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="120">
+            <span class="travel-card__emoji">👥</span>
+            <h3>Group trips</h3>
+            <p>Custom itineraries for clubs and companies.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="160">
+            <span class="travel-card__emoji">✈️</span>
+            <h3>Fly Away city trips</h3>
+            <p>Quick European city escapes by plane.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="200">
+            <span class="travel-card__emoji">🎭</span>
+            <h3>Classics tour</h3>
+            <p>Cultural and historical journeys.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="240">
+            <span class="travel-card__emoji">☀️</span>
+            <h3>Day trips</h3>
+            <p>Single-day getaways nearby.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+          <a href="#" class="travel-card reveal" data-delay="280">
+            <span class="travel-card__emoji">💍</span>
+            <h3>Honeymoon</h3>
+            <p>Tailored romantic destinations.</p>
+            <span class="travel-card__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SUSTAINABILITY (CSR / Planet B)
+         ============================================================= -->
+    <section class="section section--gradient">
+      <div class="container">
+        <div class="csr-grid">
+          <div class="csr-content reveal">
+            <p class="kicker"><span class="kicker__line"></span> Planet B initiative</p>
+            <h2 class="section-title">
+              Travel today<br />
+              <em>without compromising tomorrow.</em>
+            </h2>
+            <p class="section-lead">
+              Our CSR approach drives real action: latest-generation low-emission vehicles, optimized routing, and dedicated low-impact "Planet B" trips for travelers who care about leaving a lighter footprint.
+            </p>
+            <div class="csr-stats">
+              <div class="csr-stat">
+                <span class="csr-stat__num">−40<em>%</em></span>
+                <span class="csr-stat__label">avg. emissions vs<br />older fleet generation</span>
+              </div>
+              <div class="csr-stat">
+                <span class="csr-stat__num">100<em>%</em></span>
+                <span class="csr-stat__label">Euro 6 compliant<br />latest engines</span>
+              </div>
+              <div class="csr-stat">
+                <span class="csr-stat__num">∞</span>
+                <span class="csr-stat__label">commitment to<br />continuous improvement</span>
+              </div>
+            </div>
+          </div>
+          <div class="csr-visual reveal" data-delay="120" aria-hidden="true">
+            <div class="csr-orbit">
+              <div class="csr-orbit__core">🌍</div>
+              <div class="csr-orbit__ring csr-orbit__ring--1">
+                <span>🌱</span>
+              </div>
+              <div class="csr-orbit__ring csr-orbit__ring--2">
+                <span>🚌</span>
+              </div>
+              <div class="csr-orbit__ring csr-orbit__ring--3">
+                <span>♻️</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         AGENCIES
+         ============================================================= -->
+    <section class="section" id="agencies">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker"><span class="kicker__line"></span> Our agencies</p>
+          <h2 class="section-title">
+            Five locations, <em>one team.</em>
+          </h2>
+          <p class="section-lead">
+            Wherever you are in Luxembourg, we are nearby. Our agency teams know their region and tailor advice accordingly.
+          </p>
+        </header>
+
+        <div class="agencies-grid">
+          <article class="agency-card reveal">
+            <span class="agency-card__num">01</span>
+            <h3>Cloche d'Or</h3>
+            <p>Luxembourg City</p>
+            <span class="agency-card__arrow">→</span>
+          </article>
+          <article class="agency-card reveal" data-delay="60">
+            <span class="agency-card__num">02</span>
+            <h3>Esch-sur-Alzette</h3>
+            <p>South region</p>
+            <span class="agency-card__arrow">→</span>
+          </article>
+          <article class="agency-card reveal" data-delay="120">
+            <span class="agency-card__num">03</span>
+            <h3>Keispelt</h3>
+            <p>Headquarters</p>
+            <span class="agency-card__arrow">→</span>
+          </article>
+          <article class="agency-card reveal" data-delay="180">
+            <span class="agency-card__num">04</span>
+            <h3>Mersch</h3>
+            <p>Central region</p>
+            <span class="agency-card__arrow">→</span>
+          </article>
+          <article class="agency-card reveal" data-delay="240">
+            <span class="agency-card__num">05</span>
+            <h3>Steinfort</h3>
+            <p>West region</p>
+            <span class="agency-card__arrow">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         CTA / CONTACT
+         ============================================================= -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <p class="kicker kicker--center"><span class="kicker__line"></span> Get in touch</p>
+          <h2 class="cta-card__title">
+            Plan your next move<br />
+            <em>with us.</em>
+          </h2>
+          <p class="cta-card__text">
+            Whether it is a single shuttle, a group trip across Europe, or a fleet for a corporate event — our call center is one number away, every day, all day.
+          </p>
+
+          <div class="cta-card__channels">
+            <a href="tel:+352300146-1" class="channel">
+              <span class="channel__label">Call center</span>
+              <span class="channel__value">+352 30 01 46-1</span>
+            </a>
+            <a href="tel:+35230014680" class="channel channel--alt">
+              <span class="channel__label">24/7 line</span>
+              <span class="channel__value">+352 30 01 46 80</span>
+            </a>
+            <a href="https://www.demy.lu/en/contact/avis" target="_blank" rel="noreferrer" class="channel">
+              <span class="channel__label">Online</span>
+              <span class="channel__value">Contact form →</span>
+            </a>
+          </div>
+
+          <div class="cta-card__actions">
+            <a href="tel:+352300146-1" class="btn btn--primary btn--lg">
+              Call now
+            </a>
+            <a href="#" class="btn btn--ghost btn--lg">
+              Request a quote online
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================================================
+       FOOTER
+       ============================================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="brand">
+          <svg class="brand__logo" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+            <path d="M5 12 L20 5 L35 12 L35 28 L20 35 L5 28 Z" stroke="url(#brandGradient)" stroke-width="1.5" fill="none"/>
+            <path d="M14 16 L14 24 M14 20 L20 20 M20 16 L20 24 M20 16 L26 16 L26 24 L20 24" stroke="url(#brandGradient)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name">DEMY <em>Schandeler</em></span>
+        </div>
+        <p>Transport and travel agency in Luxembourg since 1949.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Transport</h4>
+        <a href="#">Bus</a>
+        <a href="#">Minibus</a>
+        <a href="#">Dem Shuttle</a>
+        <a href="#">Airport Shuttle</a>
+        <a href="#">Party Bus</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Travel</h4>
+        <a href="#">Bus trips</a>
+        <a href="#">Cruises</a>
+        <a href="#">City trips</a>
+        <a href="#">Group trips</a>
+        <a href="#">Honeymoon</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:+352300146-1">+352 30 01 46-1</a>
+        <a href="tel:+35230014680">24/7: 30 01 46 80</a>
+        <a href="tel:+35230014684">Lost & Found: 30 01 46 84</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Demy Schandeler. All rights reserved.</p>
+        <p class="footer__credit">
+          Redesign concept by <a href="https://fabytanaia-max.github.io/fabricio-tanaia-site/" target="_blank" rel="noreferrer">Fabrício Tanaia</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=1"></script>
+</body>
+</html>
